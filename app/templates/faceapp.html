@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+<div class='container'>
+    <h3 class='content'>Face Recognition App by Gender</h3>
+    <br>
+    <p class = 'content'>
+        Gender Classification: This app is driven by data and machine learning model. When the user uploads the image,in the background
+        it converts to grayscale,crops the face,convert into eigen image and finally passed to the model for prediction. 
+    </p>
+    <br>
+    <img src="{{url_for('static',filename='images/002.PNG')}}" alt="FaceApp" width = "600" height = "230">
+    <br>
+
+    <div align="center">
+        <a href = "{{url_for('gender')}}" class = 'btn btn-outline-primary'>Try it</a>
+    </div>
+
+    
+</div>
+{% endblock %}
